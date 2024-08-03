@@ -7,7 +7,6 @@ const mongoose = require("mongoose");
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
-const Listing = require("./models/listing.js");
 const ExpressError = require("./utils/ExpressError.js");
 const listingRouter = require("./routes/listing.js");
 const reviewRouter = require("./routes/review.js");
@@ -15,7 +14,7 @@ const userRouter = require("./routes/user.js");
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");
-const port = 3000;
+const port = 8080;
 const sessions = require("express-session");
 const MongoStore = require('connect-mongo');
 
